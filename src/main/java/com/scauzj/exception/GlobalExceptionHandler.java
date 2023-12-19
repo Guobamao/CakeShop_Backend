@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
-
     // 处理所有异常
     @ExceptionHandler(Exception.class)
     public Result exceptionHandler(Exception ex) {

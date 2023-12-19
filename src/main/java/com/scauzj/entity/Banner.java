@@ -11,7 +11,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Banner implements Serializable {
     private Integer id;
-    private Integer goodsId;
     private String image;
     private Integer type;
 }

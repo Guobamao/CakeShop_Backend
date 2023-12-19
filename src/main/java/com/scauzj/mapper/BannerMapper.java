@@ -7,6 +7,6 @@ import java.util.List;
 
 @Mapper
 public interface BannerMapper {
-    @Select("select * from banner left join cake_shop.goods g on g.id = banner.goods_id where banner.type = 1")
+    @Select("select * from banner")
     List<Banner> getCarousel();
 }

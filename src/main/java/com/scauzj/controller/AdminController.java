@@ -26,7 +26,6 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
-
     @PostMapping("/login")
     @Operation(summary = "管理员登录")
     public Result login(@RequestBody LoginDTO loginDTO) {
@@ -52,6 +51,4 @@ public class AdminController {
     @PostMapping("/logout")
     @Operation(summary = "管理员登出")
     public Result logout() { return Result.success();}
-
-
 }

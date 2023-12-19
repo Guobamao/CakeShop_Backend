@@ -8,7 +8,6 @@ import java.util.Date;
 import java.util.Map;
 
 public class JwtUtils {
-
     private static final String signKey = "scauzj";
     private static final Long expiration = 43200000L; // 12小时
     /**
@@ -23,7 +22,6 @@ public class JwtUtils {
                 .setExpiration(new Date(System.currentTimeMillis() + expiration))
                 .compact();
     }
-
 
     /**
      * 解析JWT

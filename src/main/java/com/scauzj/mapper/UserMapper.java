@@ -31,3 +31,4 @@ public interface UserMapper {
 
     void updateByUser(User user);
 }
+
